@@ -1,5 +1,55 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
 <body>
-    <p>Hello World</p>
+    <h2>Race Registration!</h2>
+    <p>
+    <form action="/Marathon">
+        <label for="first">First Name:</label>
+        <input type="text" placeholder="Enter your First Name" id="first" required minlength="3" maxlength="15">
+        <label for="last">Last Name:</label>
+        <input type="text" placeholder="Enter your Last Name" id="last" required minlength="3" maxlength="15">
+        <p>
+            Select a Race:
+        </p>
+        <input type="radio" id="5k" name="type" value="Fun Run 5k" required>
+        <label for="5k">Fun Run 5k</label>
+        <p>
+            <input type="radio" id="Half" name="type" value="Half" required>
+            <label for="Half"> Half Marathon</label>
+        </p>
+        <p>
+            <input type="radio" name="type" id="FM" value="Full Marathon" required>
+            <label for="FM">Full Marathon</label>
+        </p>
+        <label for="email" id="email">Enter Email:</label>
+        <input placeholder="Enter an Email" type="email" id="email" name="email" required>
+        <label for="password" id="password">Enter Password:</label>
+        <input placeholder="Enter a Password" type="password" id="password" name="password" required>
+        <p>
+        <p>
+            <label for="Age">Select Age Group: </label>
+            <select name="Age" id="Age" required>
+                <option value="">Please select an Age Group</option>
+                <option value="18-20">18 to 20</option>
+                <option value="21-30">21 to 30</option>
+                <option value="31-40">31 to 40</option>
+                <option value="41-50">41 to 50</option>
+                <option value="50+">50+</option>
+            </select>
+        </p>
+        <button>Register</button>
+
+        </p>
+    </form>
+    </p>
 </body>
+
+</html>
